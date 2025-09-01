@@ -1,1 +1,23 @@
+.note-links {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
 
+.note-btn {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: clamp(12px, 1.1vw, 14px);
+  font-weight: 700;
+  color: #0b1e5b;
+  background: #ffdc00;
+  border: 2px solid #ffdc00;
+  border-radius: 6px;
+  text-decoration: none;
+  line-height: 1;
+  transition: all .15s ease;
+  max-width: 32%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
