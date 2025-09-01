@@ -1,54 +1,26 @@
-.note-links {
+/* Druhý řádek – tlačítka */
+.custom-banner-pc .note-links {
   display: flex;
-  gap: 8px;
-  flex-wrap: nowrap;
-  white-space: nowrap;
+  gap: 23px;
+  flex-wrap: wrap;
 }
 
-.note-btn {
+.custom-banner-pc .note-btn {
   display: inline-block;
   padding: 8px 12px;
-  font-size: clamp(12px, 1.1vw, 14px);
+  font-size: 14px;
   font-weight: 700;
-  color: #0b1e5b;
-  background: #ffdc00;
-  border: 2px solid #ffdc00;
+  color: #0b3893;  
+  background: #fff; 
+  border: 2px solid #fff;
   border-radius: 6px;
   text-decoration: none;
   line-height: 1;
   transition: all .15s ease;
-  max-width: 32%;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
-/* hover/focus */
-.note-btn:hover,
-.note-btn:focus {
+.custom-banner-pc .note-btn:hover,
+.custom-banner-pc .note-btn:focus {
   background: transparent;
-  color: #ffdc00;
+  color: #f58d31;
   outline: none;
-}
-/* 1) default: plný text (span) */
-.note-btn::after { content: ""; }
-
-/* 2) užší monitory: short verze */
-@media (max-width: 1200px) {
-  .note-btn > span { display: none; }
-  .note-btn::after { content: attr(data-short); }
-}
-/* 3) úzké monitory: xshort verze */
-@media (max-width: 980px) {
-  .note-links { gap: 6px; }
-  .note-btn { padding: 7px 10px; font-size: 12px; }
-  .note-btn::after { content: attr(data-xshort); }
-}
-.custom-banner-pc {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-}
-.banner-image {
-  width: 100%;
-  height: auto;
-  display: block;
 }
